@@ -7,11 +7,36 @@
     tools:context="riders.gumjung.smart.smartridingservice.DragonSnsActivity">
 
 
-    <fragment
-        android:id="@+id/map_dragon_sns"
-        class="com.google.android.gms.maps.MapFragment"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_margin="5dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
 
+        <fragment
+            android:id="@+id/map_dragon_sns"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            android:background="#50ff0000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:background="#50ff0000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dragon_sns_background_500" />
+    </RelativeLayout>
 </RelativeLayout>
